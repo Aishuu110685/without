@@ -1,0 +1,10 @@
+node{
+    stage('build maven target') {
+    git branch: 'main', url: 'https://github.com/Aishuu110685/javawarfile.git'
+}
+
+stage('mvn install') {
+    sh 'mvn install '
+}  
+    
+}
